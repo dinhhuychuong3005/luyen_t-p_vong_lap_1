@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number_one = 0;
+    let next = 1;
+    let total;
+    let result;
+    while (true){
+        total = number_one + next
+        if (number_one % 5 == 0 && number_one !== 0){
+result = number_one
+break;}
+number_one = next;
+        next = total;
+        }
+document.write('so can tim la : ' + result)
+</script>
+</body>
+</html>

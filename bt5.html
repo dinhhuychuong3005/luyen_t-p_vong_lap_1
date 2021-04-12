@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number_one = 0;
+    let next = 1;
+    let count = 0;
+    let total;
+    let sum = 0;
+    while (count < 20) {
+        total = number_one + next;
+        sum += number_one;
+        number_one = next;
+        next = total;
+        count++;
+    }
+    document.write('Tổng 20 số đầu tiên của fibonaci bắt đầu với 0 là ', + sum);
+</script>
+</body>
+</html>
