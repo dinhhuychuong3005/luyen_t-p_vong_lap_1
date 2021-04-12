@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number_one = 0;
+    let next = 1;
+    let count = 0;
+    let total;
+    while (count < 20) {
+        total = number_one + next;
+        document.write(number_one + "</br>");
+        number_one = next;
+        next = total;
+        count++;
+    }
+</script>
+</body>
+</html>
