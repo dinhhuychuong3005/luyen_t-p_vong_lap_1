@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="choi()" id="play">Chơi</button>
+<script>
+function choi(){
+    alert('nhập vào đoạn muốn đoán a đến b');
+    let a = +prompt('nhập vào số a');
+    let b = +prompt('nhập vào số b lon hon so a');
+    let d = Math.floor(Math.random() * (b - a )+a )
+    for ( let i = 1; i <= 3; i++){
+        let c = +prompt(' nhap vao so du doan');
+        if (c === d){
+            alert('chuc mung');
+            break;
+        }
+         else if(c < d) {
+            alert('be hon');
+        }
+         else alert('nho hon');
+    }
+
+}
+
+</script>
+</body>
+</html>

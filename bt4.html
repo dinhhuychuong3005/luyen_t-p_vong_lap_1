@@ -10,15 +10,16 @@
     let next = 1;
     let total;
     let result;
-    while (true){
+    while (true) {
         total = number_one + next
-        if (number_one % 5 == 0 && number_one !== 0){
-result = number_one
-break;}
-number_one = next;
-        next = total;
+        if (number_one % 5 == 0 && number_one !== 0) {
+            result = number_one
+            break;
         }
-document.write('so can tim la : ' + result)
+        number_one = next;
+        next = total;
+    }
+    document.write('so can tim la : ' + result)
 </script>
 </body>
 </html>
